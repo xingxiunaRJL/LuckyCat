@@ -1,0 +1,50 @@
+html {
+  font-size: 100px;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+  background-color: #f9f9f9;
+}
+footer {
+  border-top: 1px solid #e4e4e3;
+  height: 0.7rem;
+  text-align: center;
+  padding-top: 0.16rem;
+  color: #979797;
+  font-size: 0.12rem;
+  background: #fff;
+}
+footer .links {
+  margin-bottom: 0.08rem;
+  color: #494848;
+}
+.menu_box {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0.4rem;
+  bottom: 0rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.menu_box .menu {
+  height: 0.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.menu_box .menu div {
+  flex: 1 1 auto;
+  text-align: center;
+  border-right: 1px solid red;
+}
+.menu_box .menu div a {
+  color: red;
+  display: inline-block;
+}
+.menu_box .menu div a .iconfont {
+  display: block;
+  margin-bottom: 0.02rem;
+}
+.menu_box .menu div:last-child {
+  border-right: 0 none;
+}

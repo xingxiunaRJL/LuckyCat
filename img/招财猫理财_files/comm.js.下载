@@ -1,0 +1,19 @@
+$(function(){
+	var menuFlag = false;
+	$(".top_menu_btn").click(function(){
+		if(!menuFlag){
+			menuFlag = true;
+			$("body").append('<div style="width:100%;height:100%;background:rgba(0,0,0,0.5);position:fixed;left:0;top:0;z-index:5;" class="top_menu_layer"></div>');
+			$(".top_menu menu").show();
+		}else{
+			menuFlag = false;
+			$(".top_menu menu").hide();
+			$(".top_menu_layer").remove();
+		}
+	});
+	$(document).on("click",".top_menu_layer",function(){
+		menuFlag = false;
+		$(".top_menu menu").hide();
+		$(".top_menu_layer").remove();
+	});
+});

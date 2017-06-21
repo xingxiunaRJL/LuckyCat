@@ -1,0 +1,86 @@
+@import 'z.less';
+
+.reset-sina();//重置样式
+
+@import 'public.less';
+
+//头部导航 start
+header{
+    .h(40);
+    background-color: #fa3432;
+    .flex_b();
+    .fs(12);
+    .pl(14);
+    .pr(14);
+    color: #fff;
+    .iconfont{
+        color: #fff;
+        .fs(16);
+    }
+}
+//头部导航 end
+//帮助中心 start
+.help{
+    border-top:1px solid #f5f5f4;
+    border-bottom:1px solid #f5f5f4;
+    .pb(8);
+    ul li{
+        .p(6,14,6,14);
+        border-bottom:1px solid #f5f5f4;
+        a{
+            .flex_b();
+            .fs(12);
+            .iconfont{
+                display: inline-block;
+                color: #fff;
+                .m_r(8);
+                .fs(14);
+                .w(25);
+                .h(25);
+                .lh(25);
+                text-align: center;
+                .bor_r(10);
+                background-color:#fa9427;
+            }
+            .r{
+                color:#fa9427;
+            }
+        }
+    }
+}
+//帮助中心 end
+//客服热线 start
+.hotline{
+    .h(54);
+    background-color: #fff;
+    border-bottom:1px solid #f5f5f4;
+    .m_b(8);
+    display: flex;
+    align-items: center;
+    .pl(14);
+    .pr(14);
+    .iconfont{
+        .w(34);
+        .h(34);
+        .lh(34);
+        .fs(24);
+        .bor_r(10);
+        .m_r(12);
+        text-align: center;
+        color: #fff;
+        background-color: #22cfd8;
+    }
+    div{
+        .fs(10);
+        color: #c4c4c4;
+        .phone{
+            .fs(12);
+            color: #757474;
+            .lh(16);
+            span{
+                color:#22cfd8;
+            }
+        }
+    }
+}
+//客服热线 end

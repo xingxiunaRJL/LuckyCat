@@ -1,0 +1,94 @@
+@import 'z.less';
+
+.reset-sina();//重置样式
+
+@import 'public.less';
+//头部导航 start
+header{
+    .h(40);
+    background-color: #fa3432;
+    .flex_b();
+    .fs(12);
+    .pl(14);
+    .pr(14);
+    color: #fff;
+    .iconfont{
+        color: #fff;
+        .fs(16);
+    }
+}
+//头部导航 end
+//猫 start
+.cat{
+    .h(140);
+    border-top:1px solid #f9bcbb;
+    display: flex;
+    img{
+        .w(98);
+        .h(98);
+        margin:auto;
+    }
+}
+//猫 end
+//请输入 start
+.input{
+    .pl(10);
+    .pr(10);
+    .pb(74);
+    h2{
+        .fs(10);
+        color: #222222;
+        .m_l(8);
+        .m_b(8);
+    }
+    div{
+        .h(34);
+        .lh(34);
+        .bor_r(5);
+        .pl(4);
+        border:1px solid #f2f2f2;
+        background-color: #fff;
+        color: #cdd6d9;
+        display: flex;
+        .iconfont{
+            .fs(24);
+        }
+        form{
+            display: inline-block;
+            vertical-align: top;
+        }
+        input{
+            .h(34);
+            .w(264);
+            .fs(14);
+//          .m_l(-2);
+            outline: none;
+            color: #000;
+            vertical-align: top;
+        }
+        .pla_h(#757575);/* 改变placeholder的颜色值*/
+    }
+    .next{
+        display: block;
+        .m_t(8);
+        .m_b(8);
+        .bor_r(5);
+        .bc();
+        .w(295);
+        .h(36);
+        .lh(36);
+        .fs(14);
+        color: #fff;
+        text-align: center;
+        background-color: #fa3432;
+        input{
+           .w(295);
+        .h(36);  
+        }
+    }
+    p{
+        text-align: center;
+        color: #666666;
+    }
+}
+//请输入 end

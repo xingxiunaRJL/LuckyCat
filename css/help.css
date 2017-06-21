@@ -1,0 +1,230 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+footer,
+header,
+nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+i,
+em {
+  font-style: normal;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+  background-color: #f9f9f9;
+}
+footer {
+  border-top: 1px solid #e4e4e3;
+  height: 0.7rem;
+  text-align: center;
+  padding-top: 0.16rem;
+  color: #979797;
+  font-size: 0.12rem;
+  background: #fff;
+}
+footer .links {
+  margin-bottom: 0.08rem;
+  color: #494848;
+}
+.menu_box {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0.4rem;
+  bottom: 0rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.menu_box .menu {
+  height: 0.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.menu_box .menu div {
+  flex: 1 1 auto;
+  text-align: center;
+  border-right: 1px solid red;
+}
+.menu_box .menu div a {
+  color: red;
+  display: inline-block;
+}
+.menu_box .menu div a .iconfont {
+  display: block;
+  margin-bottom: 0.02rem;
+}
+.menu_box .menu div:last-child {
+  border-right: 0 none;
+}
+header {
+  height: 0.4rem;
+  background-color: #fa3432;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.12rem;
+  padding-left: 0.14rem;
+  padding-right: 0.14rem;
+  color: #fff;
+}
+header .iconfont {
+  color: #fff;
+  font-size: 0.16rem;
+}
+.help {
+  border-top: 1px solid #f5f5f4;
+  border-bottom: 1px solid #f5f5f4;
+  padding-bottom: 0.08rem;
+}
+.help ul li {
+  padding: 0.06rem 0.14rem 0.06rem 0.14rem;
+  border-bottom: 1px solid #f5f5f4;
+}
+.help ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.12rem;
+}
+.help ul li a .iconfont {
+  display: inline-block;
+  color: #fff;
+  margin-right: 0.08rem;
+  font-size: 0.14rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  text-align: center;
+  border-radius: 0.1rem;
+  background-color: #fa9427;
+}
+.help ul li a .r {
+  color: #fa9427;
+}
+.hotline {
+  height: 0.54rem;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f4;
+  margin-bottom: 0.08rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.14rem;
+  padding-right: 0.14rem;
+}
+.hotline .iconfont {
+  width: 0.34rem;
+  height: 0.34rem;
+  line-height: 0.34rem;
+  font-size: 0.24rem;
+  border-radius: 0.1rem;
+  margin-right: 0.12rem;
+  text-align: center;
+  color: #fff;
+  background-color: #22cfd8;
+}
+.hotline div {
+  font-size: 0.1rem;
+  color: #c4c4c4;
+}
+.hotline div .phone {
+  font-size: 0.12rem;
+  color: #757474;
+  line-height: 0.16rem;
+}
+.hotline div .phone span {
+  color: #22cfd8;
+}

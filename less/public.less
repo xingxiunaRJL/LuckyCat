@@ -1,0 +1,67 @@
+@import 'z.less';
+//（1）选定一个屏，以iphone5（ 320 ） 为例
+//（2）把原来写的px单位全改成rem单位 
+//a)设置一个html中的font-size：basic px; (不设置，则默认为16px)
+//b)进行换算。
+//i.原a px   -------> 现： a/basic  rem 
+//ii.为计算方便 ，我们把basic设置为一个好算的值。网页中最小的font-size是12px，所以我们有一个很好算的值10px不能用（因为它小于12），退而求其次，取basic:100px。
+//注意：这里的basic是可以取任意的值（>12）。不一定要取100。
+//
+//（3）把iphone5 中的设置适用到其它的屏上。
+//a)以320中的baisc为基准，去设置其它屏的html中的font-size
+@basic:100px;
+html{
+    font-size:@basic;
+}
+body{
+    .font-fm();
+    background-color: #f9f9f9;
+}
+
+//底部 start
+footer{
+    border-top: 1px solid #e4e4e3;
+    .h(70);
+    text-align: center;
+    .pt(16);
+    color: #979797;
+    .fs(12);
+    background: #fff;
+    .links{
+        .m_b(8);
+        color: #494848;
+    }
+}
+//底部 end
+//隐藏菜单 start
+.menu_box{
+    display: none;
+    position: absolute;
+    width:100%;
+    .pos_t(40);
+    .pos_b(0);
+    background-color: rgba(0,0,0,0.3);
+    .menu{
+        .h(50);
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        div{
+            flex:1 1 auto;
+            text-align: center;
+            border-right:1px solid red;
+            a{
+                color: red;
+                display: inline-block;
+                .iconfont{
+                    display: block;
+                    .m_b(2);
+                }
+            }
+        }
+        div:last-child{
+            border-right:0 none;
+        }
+    }
+}
+//隐藏菜单 end
